@@ -6,3 +6,5 @@ https://www.a1k0n.net/2011/07/20/donut-math.html
 You can compile and run this code with the following command
  gcc main.c -o donut -lm;./donut
  But it also works on https://www.onlinegdb.com/
+Found that stuff
+https://www.reddit.com/r/ProgrammerHumor/comments/9ydw49/i_donut_understand_this/
