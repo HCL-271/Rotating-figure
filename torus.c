@@ -1,15 +1,27 @@
-using namespace std;
-k; 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+k; //How does work?
+/* C assumes that values that have a undefined type are integers */
 
-double sin(),cos(); 
+//double sin(),cos(); //Does it just add sin and cos? 
+/* Definition of functions, these are implemented in math.h, for simplicity 
+Actually, code doesn't need them, idk why they were added*/
 
+//main is assumed to return type of int
 main(){
     float A = 0, B = 0, i, j, z[1760];
+    //z[1760] allocates space to store to ascii art
+    
     char b[1760];
-    printf("\x1b[2J");
-    for(;;)
+    //b[1760] allocates space to store to ascii art
+    
+    printf("\x1b[2J");//this set of symbols clears screen
+    
+    for(;;) //inf loop 
     {
-        memset(b, 32, 1760);
+        memset(b, 32, 1760); //Full array with symbols, that has code 32
         memset(z, 0, 7040);
         for(j = 0; 6.28 > j; j += 0.07)
             for(i = 0; 6.28 > i; i += 0.02)
@@ -34,6 +46,8 @@ main(){
     B += 0.02;
         
         }
-    cout << sizeof(k);
+    int a = sizeof(k);
+    printf("%d", &a );
     
 }
+
